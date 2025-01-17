@@ -4,7 +4,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM ksiazki WHERE autor LIKE '%a'";
+$sql = "SELECT * FROM ksiazki WHERE author LIKE 'a%'";
 $result = mysqli_query($conn, $sql);
 ?>
 
