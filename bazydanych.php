@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+<?php 
+$conn = mysqli_connect("localhost" ,"root" ,"" ,"tabelka");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM ksiazki WHERE author LIKE 'a%'";
+$result = mysqli_query($conn, $sql);
+?>
+
+>>>>>>> 0fa37f13f8f45f67f3e0731f8f50b995e8a69623
 <!DOCTYPE html>
 <html lang="pl">
 
